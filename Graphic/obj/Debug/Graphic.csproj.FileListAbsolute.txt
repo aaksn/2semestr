@@ -1,0 +1,17 @@
+G:\2semestr\Graphic\bin\Debug\Graphic.dll
+G:\2semestr\Graphic\bin\Debug\Graphic.pdb
+G:\2semestr\Graphic\obj\Debug\Graphic.dll
+G:\2semestr\Graphic\obj\Debug\Graphic.pdb
+G:\2semestr\Graphic\obj\Debug\Graphic.csprojResolveAssemblyReference.cache
+F:\GitHub\2semestr\Graphic\bin\Debug\Graphic.dll
+F:\GitHub\2semestr\Graphic\bin\Debug\Graphic.pdb
+F:\GitHub\2semestr\Graphic\obj\Debug\Graphic.csprojResolveAssemblyReference.cache
+F:\GitHub\2semestr\Graphic\obj\Debug\Graphic.csproj.CoreCompileInputs.cache
+F:\GitHub\2semestr\Graphic\obj\Debug\Graphic.dll
+F:\GitHub\2semestr\Graphic\obj\Debug\Graphic.pdb
+G:\2semestr\Graphic\bin\Debug\Code.dll
+G:\2semestr\Graphic\bin\Debug\Code.pdb
+F:\GitHub\2semestr\Graphic\bin\Debug\Code.dll
+F:\GitHub\2semestr\Graphic\bin\Debug\Code.pdb
+F:\GitHub\2semestr\Graphic\bin\Debug\GraphClass.dll
+F:\GitHub\2semestr\Graphic\bin\Debug\GraphClass.pdb

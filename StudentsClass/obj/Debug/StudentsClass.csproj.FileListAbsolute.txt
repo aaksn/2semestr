@@ -1,0 +1,5 @@
+F:\GitHub\2semestr\StudentsClass\bin\Debug\StudentsClass.dll
+F:\GitHub\2semestr\StudentsClass\bin\Debug\StudentsClass.pdb
+F:\GitHub\2semestr\StudentsClass\obj\Debug\StudentsClass.csproj.CoreCompileInputs.cache
+F:\GitHub\2semestr\StudentsClass\obj\Debug\StudentsClass.dll
+F:\GitHub\2semestr\StudentsClass\obj\Debug\StudentsClass.pdb

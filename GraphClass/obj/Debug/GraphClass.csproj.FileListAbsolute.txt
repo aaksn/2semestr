@@ -1,0 +1,5 @@
+F:\GitHub\2semestr\GraphClass\bin\Debug\GraphClass.dll
+F:\GitHub\2semestr\GraphClass\bin\Debug\GraphClass.pdb
+F:\GitHub\2semestr\GraphClass\obj\Debug\GraphClass.csproj.CoreCompileInputs.cache
+F:\GitHub\2semestr\GraphClass\obj\Debug\GraphClass.dll
+F:\GitHub\2semestr\GraphClass\obj\Debug\GraphClass.pdb
