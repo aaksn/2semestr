@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="8_1.cs" />
+    <Compile Include="8_32.cs" />
     <Compile Include="GraphClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

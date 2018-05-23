@@ -52,7 +52,7 @@ namespace Graph
         }
         private void delb_Click(object sender, EventArgs e)
         {
-            if (liste.Items.Count != 0)
+            if (liste.Items.Count > 1)
             {
                 int k = liste.Items.Count;
                 matrix.Columns.RemoveAt(k - 1);
@@ -70,7 +70,7 @@ namespace Graph
                 r += " ";
             }
             if (result.Count!=0)
-                MessageBox.Show(r);
+                MessageBox.Show(r, "Недостижимые вершины:");
             else MessageBox.Show("Все вершины достижимы");
         }
 

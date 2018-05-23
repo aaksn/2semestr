@@ -30,5 +30,27 @@ namespace Graphic
             }
             return list;
         }
+        public List<GraphE> ParserWithLength(DataGridView dgv)
+        {
+            List<GraphE> list = new List<GraphE>();
+            int c = dgv.ColumnCount;
+            for (int i = 0; i < c; i++)
+            {
+                list.Add(new GraphE(dgv.Columns[i].Name, new List<GraphE>(), false, new List<int>()));
+            }
+            for (int i = 0; i < c; i++)
+            {
+                for (int j = 0; j < c; j++)
+                {
+                    int value = Convert.ToInt16(dgv[i, j].Value);
+                    if (value != 0)
+                    {
+                        list[j].Co.Add(list[i]);
+                        list[j].Lengths.Add(value);
+                    }
+                }
+            }
+            return list;
+        }
     }
 }

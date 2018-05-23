@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeClass", "TreeClass\Tree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsClass", "StudentsClass\StudentsClass.csproj", "{C277CFF1-3386-49C5-9D63-C84F131E7C4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_Robot", "8_Robot\8_Robot.csproj", "{BB14BFB3-7639-409B-AD14-435212ADC544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{C277CFF1-3386-49C5-9D63-C84F131E7C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C277CFF1-3386-49C5-9D63-C84F131E7C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C277CFF1-3386-49C5-9D63-C84F131E7C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB14BFB3-7639-409B-AD14-435212ADC544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB14BFB3-7639-409B-AD14-435212ADC544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB14BFB3-7639-409B-AD14-435212ADC544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB14BFB3-7639-409B-AD14-435212ADC544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

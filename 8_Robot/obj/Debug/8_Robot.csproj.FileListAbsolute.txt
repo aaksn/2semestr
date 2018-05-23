@@ -1,0 +1,14 @@
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\8_Robot.exe.config
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\8_Robot.exe
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\8_Robot.pdb
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\GraphClass.dll
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\Graphic.dll
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\GraphClass.pdb
+F:\GitHub\2s\2semestr\8_Robot\bin\Debug\Graphic.pdb
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.csprojResolveAssemblyReference.cache
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\_8_Robot.MainForm.resources
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\_8_Robot.Properties.Resources.resources
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.csproj.GenerateResource.Cache
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.csproj.CoreCompileInputs.cache
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.exe
+F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.pdb

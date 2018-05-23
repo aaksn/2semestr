@@ -44,3 +44,15 @@ F:\2semestr\3.1\obj\Debug\_3._1.Properties.Resources.resources
 F:\2semestr\3.1\obj\Debug\3.1.csproj.GenerateResource.Cache
 F:\GitHub\2semestr\3.1\bin\Debug\StudentsClass.dll
 F:\GitHub\2semestr\3.1\bin\Debug\StudentsClass.pdb
+F:\GitHub\2s\2semestr\3.1\bin\Debug\3.1.exe.config
+F:\GitHub\2s\2semestr\3.1\bin\Debug\3.1.exe
+F:\GitHub\2s\2semestr\3.1\bin\Debug\3.1.pdb
+F:\GitHub\2s\2semestr\3.1\bin\Debug\StudentsClass.dll
+F:\GitHub\2s\2semestr\3.1\bin\Debug\StudentsClass.pdb
+F:\GitHub\2s\2semestr\3.1\obj\Debug\3.1.csprojResolveAssemblyReference.cache
+F:\GitHub\2s\2semestr\3.1\obj\Debug\_3._1.Form1.resources
+F:\GitHub\2s\2semestr\3.1\obj\Debug\_3._1.Properties.Resources.resources
+F:\GitHub\2s\2semestr\3.1\obj\Debug\3.1.csproj.GenerateResource.Cache
+F:\GitHub\2s\2semestr\3.1\obj\Debug\3.1.csproj.CoreCompileInputs.cache
+F:\GitHub\2s\2semestr\3.1\obj\Debug\3.1.exe
+F:\GitHub\2s\2semestr\3.1\obj\Debug\3.1.pdb
