@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="8_1.cs" />
     <Compile Include="8_32.cs" />
-    <Compile Include="GraphClass.cs" />
+    <Compile Include="GraphNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

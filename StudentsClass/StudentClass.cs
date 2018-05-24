@@ -11,16 +11,28 @@ namespace Code
     {
         public string FIO { get; set; }
         public DateTime Year { get; set; }
-        public uint[] MedB { get; set; }
+        public double[] MedB { get; set; }
         public byte Kurs { get; set; }
         public byte Group { get; set; }
-        public Student(string fio, DateTime year, uint[] medb, byte kurs, byte group)
+        public Student(string fio, DateTime year, double[] medb, byte kurs, byte group)
         {
             FIO = fio;
             Year = year;
             MedB = medb;
             Kurs = kurs;
             Group = group;
+        }
+        public bool Process()
+        {
+            bool ok = true;
+            foreach (var item in MedB)
+            {
+                if (item < 3)
+                {
+                    ok = false;
+                }
+            }
+            return ok;
         }
     }
 }

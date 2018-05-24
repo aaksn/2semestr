@@ -12,3 +12,16 @@ F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.csproj.GenerateResource.Cache
 F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.csproj.CoreCompileInputs.cache
 F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.exe
 F:\GitHub\2s\2semestr\8_Robot\obj\Debug\8_Robot.pdb
+G:\2semestr\8_Robot\bin\Debug\8_Robot.exe.config
+G:\2semestr\8_Robot\bin\Debug\8_Robot.exe
+G:\2semestr\8_Robot\bin\Debug\8_Robot.pdb
+G:\2semestr\8_Robot\bin\Debug\GraphClass.dll
+G:\2semestr\8_Robot\bin\Debug\Graphic.dll
+G:\2semestr\8_Robot\bin\Debug\GraphClass.pdb
+G:\2semestr\8_Robot\bin\Debug\Graphic.pdb
+G:\2semestr\8_Robot\obj\Debug\8_Robot.csprojResolveAssemblyReference.cache
+G:\2semestr\8_Robot\obj\Debug\_8_Robot.MainForm.resources
+G:\2semestr\8_Robot\obj\Debug\_8_Robot.Properties.Resources.resources
+G:\2semestr\8_Robot\obj\Debug\8_Robot.csproj.GenerateResource.Cache
+G:\2semestr\8_Robot\obj\Debug\8_Robot.exe
+G:\2semestr\8_Robot\obj\Debug\8_Robot.pdb

@@ -39,3 +39,7 @@ H:\2semestr\1.1\obj\Debug\1.1.csproj.GenerateResource.Cache
 H:\2semestr\1.1\obj\Debug\1.1.csproj.CoreCompileInputs.cache
 H:\2semestr\1.1\obj\Debug\1.1.exe
 H:\2semestr\1.1\obj\Debug\1.1.pdb
+G:\2semestr\1.1\bin\Debug\1.1.exe
+G:\2semestr\1.1\bin\Debug\1.1.pdb
+G:\2semestr\1.1\bin\Debug\Code.dll
+G:\2semestr\1.1\bin\Debug\Code.pdb

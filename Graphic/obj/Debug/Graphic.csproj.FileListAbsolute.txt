@@ -25,3 +25,5 @@ F:\GitHub\2s\2semestr\Graphic\obj\Debug\Graphic.csprojResolveAssemblyReference.c
 F:\GitHub\2s\2semestr\Graphic\obj\Debug\Graphic.csproj.CoreCompileInputs.cache
 F:\GitHub\2s\2semestr\Graphic\obj\Debug\Graphic.dll
 F:\GitHub\2s\2semestr\Graphic\obj\Debug\Graphic.pdb
+G:\2semestr\Graphic\bin\Debug\GraphClass.dll
+G:\2semestr\Graphic\bin\Debug\GraphClass.pdb

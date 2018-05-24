@@ -33,3 +33,5 @@ F:\GitHub\2semestr\6.1\bin\Debug\Graphic.dll
 F:\GitHub\2semestr\6.1\bin\Debug\GraphClass.dll
 F:\GitHub\2semestr\6.1\bin\Debug\Graphic.pdb
 F:\GitHub\2semestr\6.1\bin\Debug\GraphClass.pdb
+G:\2semestr\6.1\bin\Debug\GraphClass.dll
+G:\2semestr\6.1\bin\Debug\GraphClass.pdb

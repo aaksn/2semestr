@@ -43,7 +43,7 @@
     <Compile Include="7_1.cs" />
     <Compile Include="7_1_Tree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TreeClass.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

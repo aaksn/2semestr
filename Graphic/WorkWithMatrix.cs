@@ -10,13 +10,13 @@ namespace Graphic
 {
     public class WorkWithMatrix
     {
-        public List<GraphE> Parser(DataGridView dgv)
+        public List<GraphNode> Parser(DataGridView dgv)
         {
-            List<GraphE> list = new List<GraphE>();
+            List<GraphNode> list = new List<GraphNode>();
             int c = dgv.ColumnCount;
             for (int i = 0; i < c; i++)
             {
-                list.Add(new GraphE(dgv.Columns[i].Name, new List<GraphE>(), false));
+                list.Add(new GraphNode(dgv.Columns[i].Name, new List<GraphNode>(), false));
             }
             for (int i = 0; i < c; i++)
             {
@@ -30,13 +30,13 @@ namespace Graphic
             }
             return list;
         }
-        public List<GraphE> ParserWithLength(DataGridView dgv)
+        public List<GraphNode> ParserWithLength(DataGridView dgv)
         {
-            List<GraphE> list = new List<GraphE>();
+            List<GraphNode> list = new List<GraphNode>();
             int c = dgv.ColumnCount;
             for (int i = 0; i < c; i++)
             {
-                list.Add(new GraphE(dgv.Columns[i].Name, new List<GraphE>(), false, new List<int>()));
+                list.Add(new GraphNode(dgv.Columns[i].Name, new List<GraphNode>(), false, new List<int>()));
             }
             for (int i = 0; i < c; i++)
             {

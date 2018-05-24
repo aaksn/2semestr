@@ -26,7 +26,7 @@ namespace Code
             tr.AddStart(lste[6], lste[3], false);
             tr.AddStart(lste[7], lste[6], false);
         }
-        public List<List<int>> TreeRoad(MyTree mytr)
+        public List<List<int>> TreeRoad(MyTree mytr) //дороги в Tree
         {
             List<List<int>> res = new List<List<int>>();
             List<int> wsons = new List<int>();

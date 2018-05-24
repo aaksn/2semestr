@@ -14,8 +14,8 @@ namespace _8_Robot
 {
     public partial class DrawGraph : Form
     {
-        List<GraphE> elements = new List<GraphE>();
-        public DrawGraph(List<GraphE> gr)
+        List<GraphNode> elements = new List<GraphNode>();
+        public DrawGraph(List<GraphNode> gr)
         {
             elements = gr;
             InitializeComponent();

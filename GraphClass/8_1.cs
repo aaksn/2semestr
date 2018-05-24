@@ -6,25 +6,30 @@ using System.Threading.Tasks;
 
 namespace Code
 {
-    public class WorkWithGraph
-    {        
-        public List<GraphE> SearchStart(string name, List<GraphE> list)
+    public class MyGraph
+    {
+        public List<GraphNode> GraphNodes { get; set; }
+        public MyGraph(List<GraphNode> gn)
         {
-            ClearVisit(list);
-            List<GraphE> tmp = new List<GraphE>();
-            for (int i = 0; i < list.Count; i++)
+            GraphNodes = gn;
+        }
+        public List<GraphNode> SearchStart(string name)
+        {
+            ClearVisit();
+            List<GraphNode> tmp = new List<GraphNode>();
+            for (int i = 0; i < GraphNodes.Count; i++)
             {
-                if (list[i].Name == name)
-                    Search(list[i]);
+                if (GraphNodes[i].Name == name)
+                    Search(GraphNodes[i]);
             }
-            foreach (var item in list)
+            foreach (var item in GraphNodes)
             {
                 if (item.Visit == false)
                     tmp.Add(item);
             }
             return tmp;
         }
-        public void Search(GraphE el)
+        public void Search(GraphNode el)
         {
             if (el.Visit == false)
             {
@@ -33,14 +38,13 @@ namespace Code
                     el.Visit = true;
                     Search(item);                
                 }
-            }
-            
+            }            
         }
-        public void ClearVisit(List<GraphE> list)
+        public void ClearVisit()
         {
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < GraphNodes.Count; i++)
             {
-                list[i].Visit = false;
+                GraphNodes[i].Visit = false;
             }
         }
     }

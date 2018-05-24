@@ -10,3 +10,14 @@ F:\GitHub\2semestr\2.1\obj\Debug\2.1.csproj.GenerateResource.Cache
 F:\GitHub\2semestr\2.1\obj\Debug\2.1.csproj.CoreCompileInputs.cache
 F:\GitHub\2semestr\2.1\obj\Debug\2.1.exe
 F:\GitHub\2semestr\2.1\obj\Debug\2.1.pdb
+G:\2semestr\2.1\bin\Debug\2.1.exe.config
+G:\2semestr\2.1\bin\Debug\2.1.exe
+G:\2semestr\2.1\bin\Debug\2.1.pdb
+G:\2semestr\2.1\bin\Debug\Code.dll
+G:\2semestr\2.1\bin\Debug\Code.pdb
+G:\2semestr\2.1\obj\Debug\2.1.csprojResolveAssemblyReference.cache
+G:\2semestr\2.1\obj\Debug\_2._1.Form1.resources
+G:\2semestr\2.1\obj\Debug\_2._1.Properties.Resources.resources
+G:\2semestr\2.1\obj\Debug\2.1.csproj.GenerateResource.Cache
+G:\2semestr\2.1\obj\Debug\2.1.exe
+G:\2semestr\2.1\obj\Debug\2.1.pdb

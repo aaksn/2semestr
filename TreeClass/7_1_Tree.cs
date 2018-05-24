@@ -11,7 +11,7 @@ namespace Code
         public Tree Top { get; set; }
         
         int Levelcount { get; set; }
-        private Tree Tmp { get; set; }
+        
         public MyTree()
         {
             Top = null;            
@@ -50,6 +50,7 @@ namespace Code
 
         public Tree SearchingRecursion(Tree tr, int val)
         {
+            Tree Tmp= null;
             if (tr.Data == val)
                 Tmp = tr;
             for (Tree t = tr; t != null; t = t.Brother)

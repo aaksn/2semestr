@@ -18,7 +18,7 @@ namespace _3._1
     //положительных оценок за все десять семестров).
     //
     // Для пересоздания файла нужно нажать Ctrl + "Открыть файл", что в него будет записано можно
-    //задать в фунции в конце класса формы
+    //задать в фунции в конце класса формы, 
     // Библиотека классов - StudentsClass
 
     public partial class Form1 : Form
@@ -26,7 +26,8 @@ namespace _3._1
         bool ok = false;
         BinaryFormatter formatter = new BinaryFormatter();
         Student[] deserilizeStudents;
-        Class3_1 logic = new Class3_1();
+        Serialization logic = new Serialization();
+        
         public Form1()
         {
             InitializeComponent();
@@ -63,7 +64,7 @@ namespace _3._1
         {
             if (studentsBox.SelectedIndex != -1 && ok)
 			{
-                if (logic.Process(studentsBox.SelectedIndex, deserilizeStudents))
+                if (deserilizeStudents[studentsBox.SelectedIndex].Process())
                 {
                     status.Text = "Долгов нет!";
                     status.Visible = true;
@@ -84,10 +85,10 @@ namespace _3._1
         {
             if (e.Control)
             {
-                uint[] s1 = new uint[] { 2, 3, 4, 5, 4, 3, 3, 4, 2, 5 };
+                double[] s1 = new double[] { 2, 3, 4, 5, 4, 3, 3, 4, 2, 5 };
                 Student student1 = new Student("Ivan Obgorov", Convert.ToDateTime("27.04.1999"), s1, 5, 1);
-                uint[] s2 = new uint[] { 5, 5, 4, 5, 4, 5, 4, 4, 5, 5 };
-                Student student2 = new Student("Kamaz Dzagoev", Convert.ToDateTime("27.04.1999"), s2, 5, 2);
+                double[] s2 = new double[] { 5, 5, 4, 5, 4, 5, 4, 4, 5, 5 };
+                Student student2 = new Student("Kamaz Dzagoev", Convert.ToDateTime("25.04.1999"), s2, 5, 2);
                 Student[] students = new Student[] { student1, student2 };
                 using (FileStream fs = new FileStream("Students.dat", FileMode.Create))
                 {
