@@ -21,8 +21,7 @@ namespace _7._1
     //при этом первыми заменять конечные элементы пути.
     //
     // Библиотека классов - TreeClass
-    //
-    // Сделать нормальное рисование,  добавление любого числа случайных узлов.
+    
     public partial class Form1 : Form
     {
         string[] lines;
@@ -53,8 +52,7 @@ namespace _7._1
             outtreeonform.TextAlign = HorizontalAlignment.Left;
             //outtreeonform.Lines = DrawTrees.DT(lines);
             outtreeonform.Lines = lines;
-            label2.Text = null;
-            //label2.Update();            
+            label2.Text = null;                        
             label2.Invalidate();
         }
 
