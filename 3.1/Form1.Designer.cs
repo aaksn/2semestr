@@ -33,6 +33,7 @@
             this.studentsBox = new System.Windows.Forms.ListBox();
             this.checkbutton = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.marksl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFile
@@ -51,7 +52,7 @@
             // status
             // 
             this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.status.Location = new System.Drawing.Point(13, 370);
+            this.status.Location = new System.Drawing.Point(13, 381);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(581, 33);
             this.status.TabIndex = 1;
@@ -69,6 +70,7 @@
             this.studentsBox.Name = "studentsBox";
             this.studentsBox.Size = new System.Drawing.Size(583, 246);
             this.studentsBox.TabIndex = 2;
+            this.studentsBox.DoubleClick += new System.EventHandler(this.studentsBox_DoubleClick);
             // 
             // checkbutton
             // 
@@ -89,11 +91,23 @@
             this.openFileDialog.Filter = "Типизированный файл (*.dat)|*.dat|Все файлы (*.*)|*.*";
             this.openFileDialog.InitialDirectory = "../";
             // 
+            // marksl
+            // 
+            this.marksl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.marksl.Location = new System.Drawing.Point(15, 338);
+            this.marksl.Name = "marksl";
+            this.marksl.Size = new System.Drawing.Size(581, 33);
+            this.marksl.TabIndex = 4;
+            this.marksl.Text = "Долгов нет!";
+            this.marksl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.marksl.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 422);
+            this.Controls.Add(this.marksl);
             this.Controls.Add(this.checkbutton);
             this.Controls.Add(this.studentsBox);
             this.Controls.Add(this.status);
@@ -115,6 +129,7 @@
         private System.Windows.Forms.ListBox studentsBox;
         private System.Windows.Forms.Button checkbutton;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Label marksl;
     }
 }
 

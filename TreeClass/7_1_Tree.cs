@@ -8,23 +8,25 @@ namespace Code
 {
     public class MyTree
     {
-        public Tree Top { get; set; }
-        
-        int Levelcount { get; set; }
-        
+        public NodeTree Top { get; set; }
+        public int Widht { get; set; }
+        public int Height { get; set; }
+        NodeTree Tmp = null;
         public MyTree()
         {
-            Top = null;            
-            Levelcount = 0;
+            Top = null;
+            Widht = 1;
+            Height = 0;
         }
-        public void Add(Tree tree, int data, int treeanchor, bool isbrother)  // вставка
+        public void Add(NodeTree tree, int data, int treeanchor, bool isbrother)  // вставка
         {
             tree = Search(treeanchor, tree);
             if (tree == null)
-            {                
-                Top = new Tree(null, null, data);                
-                Levelcount++;
-            }                
+            {
+                Top = new NodeTree(null, null, data, Widht, Height);
+                Height++;
+            }
+                
             else if (treeanchor == Convert.ToInt32(tree.Data))
             {
                 Insert(tree, data, isbrother);                
@@ -34,7 +36,7 @@ namespace Code
         {
             Add(Top, val, treeanchor, isbrother);
         }
-        public Tree Search(int val, Tree tr)
+        public NodeTree Search(int val, NodeTree tr)
         {
             if (tr == null)
             {
@@ -47,13 +49,11 @@ namespace Code
                 return SearchingRecursion(tr, val);
             }
         }
-
-        public Tree SearchingRecursion(Tree tr, int val)
+        public NodeTree SearchingRecursion(NodeTree tr, int val)
         {
-            Tree Tmp= null;
             if (tr.Data == val)
                 Tmp = tr;
-            for (Tree t = tr; t != null; t = t.Brother)
+            for (NodeTree t = tr; t != null; t = t.Brother)
             {
                 if (t.Son != null)
                 {
@@ -66,18 +66,70 @@ namespace Code
                     SearchingRecursion(t.Brother, val);
                 }
             }
-            return Tmp;
-            
+            return Tmp;            
         }
-        public void Insert(Tree tree, int data, bool isbrother)
+        public void Insert(NodeTree tree, int data, bool isbrother)
         {
             if (isbrother)
-                tree.Brother = new Tree(null, null, data);                
+            {
+                Widht++;
+                tree.Brother = new NodeTree(null, null, data, Widht, Height);
+            }
             else
             {
-                tree.Son = new Tree(null, null, data);
-                Levelcount++;
+                Widht = tree.X;
+                Height = tree.Y + 1;
+                tree.Son = new NodeTree(null, null, data, Widht, Height);                
             }
+            
+        }
+        public List<List<int>> TreeRoad()
+        {
+            List<List<int>> res = new List<List<int>>();
+            List<int> wsons = new List<int>();
+            List<int> elements = new List<int>();
+            NodeTreeWithoutSons(Top, wsons);
+            AllElements(Top, elements);
+            for (int i = 0; i < wsons.Count; i++)
+            {
+                int e = wsons[i];
+                int index = elements.IndexOf(e);
+                res.Add(elements.GetRange(0, index + 1));
+                if (index != elements.Count - 1)
+                {
+                    if (e < elements[index + 1])
+                        elements.Remove(e);
+                    else
+                    {
+                        for (int j = index; j != 0; j--)
+                        {
+                            elements.RemoveAt(j);
+                        }
+                    }
+                }
+            }
+            return res;
+        }
+        public List<int> NodeTreeWithoutSons(NodeTree tr, List<int> elmnts)
+        {
+            for (NodeTree t = tr; t != null; t = t.Brother)
+            {
+                if (t.Son == null)
+                    elmnts.Add(t.Data);
+                else
+                    NodeTreeWithoutSons(t.Son, elmnts);
+            }
+            return elmnts;
+        }
+        public List<int> AllElements(NodeTree tr, List<int> elmnts)
+        {
+            for (NodeTree t = tr; t != null; t = t.Brother)
+            {
+                elmnts.Add(t.Data);
+                if (t.Son != null)
+                    AllElements(t.Son, elmnts);
+            }
+            return elmnts;
         }
     }
 }

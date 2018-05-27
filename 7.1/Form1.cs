@@ -22,22 +22,22 @@ namespace _7._1
     //
     // Библиотека классов - TreeClass
     //
-    // Сделать нормальное рисование, вывод путей на форму, добавление любого числа случайных узлов, переименовать узлы, в классе свойство - список узлов
+    // Сделать нормальное рисование,  добавление любого числа случайных узлов.
     public partial class Form1 : Form
     {
-        WorkWithTree work = new WorkWithTree();
-        MyTree myTree = new MyTree();
         string[] lines;
+        List<List<int>> paths;
+        MyTree myTree;
         public Form1()
         {
             InitializeComponent();
         }
         private void rndbutton_Click(object sender, EventArgs e)
         {
-            outtreeonform.Clear();
-            outtreeonform.TextAlign = HorizontalAlignment.Left;
-            work.TreeConstruct(Convert.ToInt32(textBox2.Text), myTree);
-            List<List<int>> paths = work.TreeRoad(myTree);
+            myTree = new MyTree();
+            WorkWithTree work = new WorkWithTree();            
+            work.TreeConstruct(8, myTree);
+            paths = myTree.TreeRoad();            
             lines = new string[paths.Count];
             for (int i = 0; i < paths.Count; i++)
             {
@@ -49,8 +49,13 @@ namespace _7._1
                 }
                 lines[i] = tmp;
             }
-            DrawTrees draw = new DrawTrees();            
-            outtreeonform.Lines = draw.DT(lines);
+            outtreeonform.Clear();
+            outtreeonform.TextAlign = HorizontalAlignment.Left;
+            //outtreeonform.Lines = DrawTrees.DT(lines);
+            outtreeonform.Lines = lines;
+            label2.Text = null;
+            //label2.Update();            
+            label2.Invalidate();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,6 +70,11 @@ namespace _7._1
                 {
                     MessageBox.Show(Convert.ToString(except));
                 }
+        }
+
+        private void label2_Paint(object sender, PaintEventArgs e)
+        {
+            DrawTrees.DrawT(e, paths, myTree);
         }
     }
 }

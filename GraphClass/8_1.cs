@@ -29,7 +29,7 @@ namespace Code
             }
             return tmp;
         }
-        public void Search(GraphNode el)
+        private void Search(GraphNode el)
         {
             if (el.Visit == false)
             {
@@ -40,7 +40,7 @@ namespace Code
                 }
             }            
         }
-        public void ClearVisit()
+        private void ClearVisit()
         {
             for (int i = 0; i < GraphNodes.Count; i++)
             {

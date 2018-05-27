@@ -57,6 +57,10 @@
       <Project>{0c9d43f3-b8da-4acb-ac9e-e0b19e95d965}</Project>
       <Name>GraphClass</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TreeClass\TreeClass.csproj">
+      <Project>{0236c32f-ae26-4a77-955b-5339fb633565}</Project>
+      <Name>TreeClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

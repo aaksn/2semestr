@@ -22,8 +22,7 @@ namespace Graph
     //
     // Библиотека классов - GraphClass
     public partial class MainForm : Form
-    {
-        MyGraph mygraph = new MyGraph(new List<GraphNode>());
+    {        
         WorkWithMatrix wwm = new WorkWithMatrix();
         string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public MainForm()
@@ -42,7 +41,7 @@ namespace Graph
             for (int i = 0; i < k; i++)
             {
                 Random rnd = new Random();
-                row[i] = rnd.Next(10).ToString();
+                row[i] = "0";
             }
             row[k] = "1";
             matrix.Rows[k].SetValues(row);
@@ -65,7 +64,7 @@ namespace Graph
         private void search_Click(object sender, EventArgs e)
         {
             string r = "";
-            mygraph.GraphNodes = wwm.Parser(matrix);
+            MyGraph mygraph = new MyGraph(wwm.Parser(matrix));            
             List<GraphNode> result = mygraph.SearchStart(liste.SelectedItem.ToString());
             foreach (var item in result)
             {

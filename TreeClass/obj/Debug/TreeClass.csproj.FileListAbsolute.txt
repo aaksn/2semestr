@@ -8,3 +8,9 @@ G:\2semestr\TreeClass\bin\Debug\TreeClass.pdb
 G:\2semestr\TreeClass\obj\Debug\TreeClass.csprojResolveAssemblyReference.cache
 G:\2semestr\TreeClass\obj\Debug\TreeClass.dll
 G:\2semestr\TreeClass\obj\Debug\TreeClass.pdb
+F:\GitHub\2s\2semestr\TreeClass\bin\Debug\TreeClass.dll
+F:\GitHub\2s\2semestr\TreeClass\bin\Debug\TreeClass.pdb
+F:\GitHub\2s\2semestr\TreeClass\obj\Debug\TreeClass.csprojResolveAssemblyReference.cache
+F:\GitHub\2s\2semestr\TreeClass\obj\Debug\TreeClass.csproj.CoreCompileInputs.cache
+F:\GitHub\2s\2semestr\TreeClass\obj\Debug\TreeClass.dll
+F:\GitHub\2s\2semestr\TreeClass\obj\Debug\TreeClass.pdb
