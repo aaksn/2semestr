@@ -36,7 +36,7 @@ namespace Graphic
             int c = dgv.ColumnCount;
             for (int i = 0; i < c; i++)
             {
-                list.Add(new GraphNode(dgv.Columns[i].Name, new List<GraphNode>(), false, new List<int>()));
+                list.Add(new GraphNode(dgv.Columns[i].Name, new List<GraphNode>(), false, new List<double>()));
             }
             for (int i = 0; i < c; i++)
             {

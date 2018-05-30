@@ -13,8 +13,7 @@ using Graphic;
 namespace _8_Robot
 {
     public partial class MainForm : Form
-    {
-        Robot robot = new Robot();
+    {        
         WorkWithMatrix wwm = new WorkWithMatrix();
         string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public MainForm()
@@ -36,7 +35,7 @@ namespace _8_Robot
             {
                 row[i] = "0"; // 0
             }
-            row[k] = "1";
+            row[k] = "0";
             matrix.Rows[k].SetValues(row);
             for (int i = 0; i < k; i++)
             {
@@ -65,20 +64,35 @@ namespace _8_Robot
 
         private void start_Click(object sender, EventArgs e)
         {
-            int mintime = -1;
-            try
-            {
-                if (r3chek.Checked)
-                    mintime = robot.MinTimeSearch(pointr1.SelectedText, speedr1.SelectedIndex + 1, pointr2.SelectedText, speedr2.SelectedIndex + 1, pointr3.SelectedText, speedr3.SelectedIndex + 1, wwm.ParserWithLength(matrix));
-                else mintime = robot.MinTimeSearch(pointr1.SelectedText, speedr1.SelectedIndex + 1, pointr2.SelectedText, speedr2.SelectedIndex + 1, wwm.ParserWithLength(matrix));
-                if (mintime == -1)
-                    MessageBox.Show("Встреча роботов невозможна :(");
-                else MessageBox.Show(mintime.ToString(), "Минимальное время:");
-            }
-            catch (Exception z)
-            {
-                MessageBox.Show(z.ToString(), "Ошибка в заполнении таблицы"); 
-            }
+            double mintime = -1;
+            //try
+            //{                
+            //    Robot robot = new Robot(wwm.ParserWithLength(matrix));
+            //    if (r3chek.Checked)
+            //        mintime = robot.MinTimeSearch(pointr1.Text, speedr1.SelectedIndex + 1,
+            //            pointr2.Text, speedr2.SelectedIndex + 1,
+            //            pointr3.Text, speedr3.SelectedIndex + 1);
+            //    else mintime = robot.MinTimeSearch(pointr1.Text, speedr1.SelectedIndex + 1,
+            //        pointr2.Text, speedr2.SelectedIndex + 1);
+            //    if (mintime == -1)
+            //        MessageBox.Show("Встреча роботов невозможна :(");
+            //    else MessageBox.Show(mintime.ToString(), "Минимальное время:");
+            //}
+            //catch (Exception z)
+            //{
+            //    MessageBox.Show(z.ToString(), "Ошибка в заполнении таблицы");
+            //}
+            Robot robot = new Robot(wwm.ParserWithLength(matrix));
+            if (r3chek.Checked)
+                mintime = robot.MinTimeSearch(pointr1.Text, speedr1.SelectedIndex + 1,
+                    pointr2.Text, speedr2.SelectedIndex + 1,
+                    pointr3.Text, speedr3.SelectedIndex + 1);
+            else mintime = robot.MinTimeSearch(pointr1.Text, speedr1.SelectedIndex + 1,
+                pointr2.Text, speedr2.SelectedIndex + 1);
+            if (mintime == -1)
+                MessageBox.Show("Встреча роботов невозможна :(");
+            else MessageBox.Show(mintime.ToString(), "Минимальное время:");
+
         }
 
         private void r3chek_CheckedChanged(object sender, EventArgs e)

@@ -42,3 +42,5 @@ G:\2semestr\Graph\bin\Debug\GraphClass.dll
 G:\2semestr\Graph\bin\Debug\GraphClass.pdb
 G:\2semestr\Graph\obj\Debug\Graph.DrawGraph.resources
 G:\2semestr\Graph\obj\Debug\Graph.MainForm.resources
+F:\GitHub\2s\2semestr\Graph\bin\Debug\TreeClass.dll
+F:\GitHub\2s\2semestr\Graph\bin\Debug\TreeClass.pdb
