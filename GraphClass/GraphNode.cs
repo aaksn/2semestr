@@ -37,14 +37,8 @@ namespace Code
     {
         public bool Equals(GraphNode gn1, GraphNode gn2)
         {
-            if (gn2 == null && gn1 == null)
-                return true;
-            else if (gn1 == null | gn2 == null)
-                return false;
-            else if (gn1.Name == gn2.Name)
-                return true;
-            else
-                return false;
+            if (ReferenceEquals(gn1, gn2)) return true;
+            return gn1 != null && gn2 != null && gn1.Name.Equals(gn2.Name);
         }
 
         public int GetHashCode(GraphNode gn)
