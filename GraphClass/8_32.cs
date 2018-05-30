@@ -30,7 +30,7 @@ namespace Code
                 mt += 0.5;
                 Step(ref tmp1, ref nowr1, speedr1);
                 Step(ref tmp2, ref nowr2, speedr2);                
-                if (tmp1.Except(tmp2, new NodeComparer()).Count() != 0)
+                if (tmp1.Intersect(tmp2, new NodeComparer()).Count() != 0)
                     meet = true;
                 if (tmp1.Count == 0 & tmp2.Count == 0 & nowr1.Count == 0 & nowr2.Count == 0 & !meet)
                     return -1;
@@ -63,7 +63,7 @@ namespace Code
                 Step(ref tmp1, ref nowr1, speedr1);
                 Step(ref tmp2, ref nowr2, speedr2);
                 Step(ref tmp3, ref nowr3, speedr3);
-                if (tmp1.Except(tmp2.Except(tmp3, new NodeComparer()), new NodeComparer()).Count() != 0)
+                if (tmp1.Intersect(tmp2.Intersect(tmp3, new NodeComparer()), new NodeComparer()).Count() != 0)
                     meet = true;
                 if (tmp1.Count == 0 & tmp2.Count == 0 & tmp3.Count == 0
                     & nowr1.Count == 0 & nowr2.Count == 0 & nowr3.Count == 0 & !meet)
